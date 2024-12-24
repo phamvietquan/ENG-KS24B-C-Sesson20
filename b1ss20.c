@@ -35,7 +35,7 @@ int main() {
         printf("8. Thoat\n");
         printf("Lua chon cua ban: ");
         scanf("%d", &menu);
-        getchar(); // Xóa ký t? xu?ng dòng trong b? d?m
+        getchar(); 
 
         switch (menu) {
             case 1:
@@ -54,13 +54,13 @@ int main() {
             case 4:
                 printf("Moi ban nhap ma sach muon xoa: ");
                 fgets(id, sizeof(id), stdin);
-                id[strcspn(id, "\n")] = '\0'; // Lo?i b? ký t? xu?ng dòng
+                id[strcspn(id, "\n")] = '\0'; 
                 deleteBook(id, &n, book);
                 break;
             case 5:
                 printf("Moi ban nhap ma sach can cap nhat: ");
                 fgets(id, sizeof(id), stdin);
-                id[strcspn(id, "\n")] = '\0'; // Lo?i b? ký t? xu?ng dòng
+                id[strcspn(id, "\n")] = '\0';
                 updateBook(id, n, book);
                 break;
             case 6:
@@ -75,7 +75,7 @@ int main() {
             case 7:
                 printf("Moi ban nhap ten sach can tim: ");
                 fgets(name, sizeof(name), stdin);
-                name[strcspn(name, "\n")] = '\0'; // Lo?i b? ký t? xu?ng dòng
+                name[strcspn(name, "\n")] = '\0'; 
                 searchBookByName(name, n, book);
                 break;
             case 8:
